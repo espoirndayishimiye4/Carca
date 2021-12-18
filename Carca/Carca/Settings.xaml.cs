@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Carca
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Dashboard : TabbedPage
+    public partial class Settings : ContentPage
     {
-        public Dashboard()
+        public Settings()
         {
             InitializeComponent();
         }

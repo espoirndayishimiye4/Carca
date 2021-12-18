@@ -5,12 +5,23 @@
              
             >
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="SignIn!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="30">
+            <Label Text="First Name"></Label>
+
+            <Entry FontSize="15"></Entry>
+            <Label Text="Last Name"></Label>
+            <Entry FontSize="15"></Entry>
+            <Label Text="Mobile Phone Number"></Label>
+            <Entry FontSize="15"></Entry>
+            <Label Text="Secondary Phone Number"></Label>
+            <Entry FontSize="15"></Entry>
+            <Label Text="I have Read and Agree to The"></Label>
+            <Label Text="Terms And Conditions"></Label>
             <Button Text="Continue"
-                    Clicked="Button_Clicked"></Button>
+                    Clicked="Button_Clicked"
+                    BackgroundColor="#aaaaaa"
+                    TextColor="White"
+                    CornerRadius="40"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

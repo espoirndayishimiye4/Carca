@@ -10,10 +10,8 @@ namespace Carca
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage())
-            {
-                BarBackgroundColor = Color.FromHex("#ffffff")
-            };
+            MainPage = new NavigationPage(new MainPage());
+            
 
         }
 
