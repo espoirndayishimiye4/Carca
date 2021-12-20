@@ -9,11 +9,12 @@
             UnselectedTabColor="Coral"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
+            
             >
 
-    <local:Home Title="home" IconImageSource="add.png"></local:Home>
-    <local:Menu Title="menu" IconImageSource="add.png"></local:Menu>
-    <local:File Title="file" IconImageSource="add.png"></local:File>
-    <local:Money Title="money" IconImageSource="add.png"></local:Money>
-    <local:Settings Title="settings" IconImageSource="add.png"></local:Settings>
+    <local:Home  IconImageSource="add.png"></local:Home>
+    <local:Menu  IconImageSource="grid.png"></local:Menu>
+    <local:File  IconImageSource="text.png"></local:File>
+    <local:Money  IconImageSource="add.png"></local:Money>
+    <local:Settings IconImageSource="settings.png"></local:Settings>
 </TabbedPage>

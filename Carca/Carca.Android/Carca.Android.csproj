@@ -84,7 +84,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\text.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Carca\Carca.csproj">
       <Project>{23E98305-BC00-47F9-AE56-C6F737F1C274}</Project>
