@@ -3,25 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carca.SignIn"
              NavigationPage.HasNavigationBar="False"
+             xmlns:local="clr-namespace:Carca"
             >
     <ContentPage.Content>
         <StackLayout Padding="30">
-            <Label Text="First Name"></Label>
+            <Label Text="First Name"
+                   Margin="20,0,0,0"></Label>
 
-            <Entry FontSize="15"></Entry>
-            <Label Text="Last Name"></Label>
-            <Entry FontSize="15"></Entry>
-            <Label Text="Mobile Phone Number"></Label>
-            <Entry FontSize="15"></Entry>
-            <Label Text="Secondary Phone Number"></Label>
-            <Entry FontSize="15"></Entry>
-            <Label Text="I have Read and Agree to The"></Label>
-            <Label Text="Terms And Conditions"></Label>
+            <local:MyEntry FontSize="15" ></local:MyEntry>
+            <Label Text="Last Name"
+                   Margin="20,0,0,0"></Label>
+            <local:MyEntry FontSize="15" ></local:MyEntry>
+            <Label Text="Mobile Phone Number"
+                   Margin="20,0,0,0"></Label>
+            <local:MyEntry FontSize="15" ></local:MyEntry>
+            <Label Text="Secondary Phone Number"
+                   Margin="20,0,0,0"></Label>
+            <local:MyEntry FontSize="15" ></local:MyEntry>
+            <Label Text="I have read and agree to the"
+                   Margin="20,20,0,0"></Label>
+            <Label Text="Terms And Conditions"
+                   Margin="20,0,0,0"></Label>
             <Button Text="Continue"
                     Clicked="Button_Clicked"
                     BackgroundColor="#aaaaaa"
                     TextColor="White"
-                    CornerRadius="40"></Button>
+                    CornerRadius="40"
+                     Margin="0,20,0,0"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

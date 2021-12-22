@@ -3,34 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carca.MainPage"
              BackgroundColor="White"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             xmlns:local="clr-namespace:Carca">
 
-    <StackLayout Padding="50">
+    <StackLayout Padding="60">
         <Label Text="Circa" 
                TextColor="#1c0c65" 
                FontAttributes="Bold"
                VerticalTextAlignment="Center" 
                HorizontalTextAlignment="Center"
                FontSize="50"
+               Margin="0,20,0,50"
                ></Label>
-        <Label Text="Email"></Label>
-        
-        <Entry FontSize="15"></Entry>
-        <Label Text="Create Password"></Label>
-        <Entry IsPassword="True"
-               FontSize="15"></Entry>
-        <Label Text="Confirm Password"></Label>
-        <Entry IsPassword="True"
-               FontSize="15"></Entry>
+
+        <Label Text="Email"
+               Margin="20,0,0,0"></Label>
+
+        <local:MyEntry FontSize="15" ></local:MyEntry>
+
+        <Label Text="Create Password"
+               Margin="20,0,0,0"></Label>
+
+        <local:MyEntry IsPassword="True"></local:MyEntry>
+
+        <Label Text="Confirm Password"
+               Margin="20,0,0,0"></Label>
+
+        <local:MyEntry IsPassword="True"></local:MyEntry>
         <Button Text="Continue"
                 Clicked="Button_Clicked"
                 BackgroundColor="#aaaaaa"
                 TextColor="White"
-                CornerRadius="40"></Button>
+                CornerRadius="40"
+                Margin="0,20,0,0"></Button>
         <Button Text="Sign In"
                 Clicked="Button_Clicked_1"
                 BackgroundColor="White"
-                TextColor="#aaaaaa"></Button>
+                TextColor="#aaaaaa"
+                CornerRadius="40"></Button>
     </StackLayout>
 
 </ContentPage>
