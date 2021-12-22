@@ -41,6 +41,7 @@
                 BackgroundColor="White"
                 TextColor="#aaaaaa"
                 CornerRadius="40"></Button>
+        <Label  Text="&#xf007;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Title" TextColor="Black"/>
     </StackLayout>
 
 </ContentPage>

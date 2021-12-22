@@ -3,6 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carca.App">
     <Application.Resources>
-        
+        <ResourceDictionary>
+
+            <OnPlatform x:TypeArguments="x:String" x:Key="FontAwesomeRegular">
+                <On Platform="Android" Value="FontAwesome5Regular400.otf#Regular" />
+                <On Platform="iOS" Value="FontAwesome5Regular400" />
+            </OnPlatform>
+
+            <OnPlatform x:TypeArguments="x:String" x:Key="FontAwesomeBrands">
+                <On Platform="Android" Value="FontAwesome5BrandsRegular400.otf#Brands" />
+                <On Platform="iOS" Value="FontAwesome5BrandsRegular400" />
+            </OnPlatform>
+
+            <OnPlatform x:TypeArguments="x:String" x:Key="FontAwesomeSolid">
+                <On Platform="Android" Value="FontAwesome5Solid900.otf#Solid" />
+                <On Platform="iOS" Value="FontAwesome5Solid900" />
+            </OnPlatform>
+
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
