@@ -4,11 +4,34 @@
              x:Class="Carca.SignIn"
              NavigationPage.HasNavigationBar="False"
              xmlns:local="clr-namespace:Carca"
+             
             >
     <ContentPage.Content>
         <StackLayout Padding="30">
+            <Label  Text="&#xf0d9;" 
+                    FontFamily="{StaticResource FontAwesomeSolid}" 
+                    FontSize="15" 
+                    TextColor="Black"
+                    Margin="-20,-20,0,0"/>
+            <Label Text="Mail"
+                   TextColor="Black"
+                   Margin="-8,-25,0,0"></Label>
+
+            <Label  Text="&#xf053;" 
+                    FontFamily="{StaticResource FontAwesomeSolid}" 
+                    FontSize="30" 
+                    TextColor="#1c0c65"
+                    Margin="0,20,0,0"
+                    />
+
+            <Label Text="Contact Information"
+                   TextColor="#1c0c65"
+                   Margin="70,-35,0,0"
+                   FontSize="20"
+                   FontAttributes="Bold"></Label>
+            
             <Label Text="First Name"
-                   Margin="20,0,0,0"></Label>
+                   Margin="20,50,0,0"></Label>
 
             <local:MyEntry FontSize="15" ></local:MyEntry>
             <Label Text="Last Name"
@@ -22,14 +45,23 @@
             <local:MyEntry FontSize="15" ></local:MyEntry>
             <Label Text="I have read and agree to the"
                    Margin="20,20,0,0"></Label>
+            
+            <Switch Margin="0,0,0,0"></Switch>
+
             <Label Text="Terms And Conditions"
-                   Margin="20,0,0,0"></Label>
+                   Margin="20,-35,0,0"
+                   TextColor="#1c0c65">
+                <Label.Effects>
+                    <local:UnderlineEffect />
+                </Label.Effects>
+            </Label>
+            
             <Button Text="Continue"
                     Clicked="Button_Clicked"
                     BackgroundColor="#aaaaaa"
                     TextColor="White"
                     CornerRadius="40"
-                     Margin="0,20,0,0"></Button>
+                     Margin="0,40,0,0"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
