@@ -12,9 +12,9 @@
             
             >
 
-    <local:Home  IconImageSource="add.png"></local:Home>
-    <local:Menu  IconImageSource="grid.png"></local:Menu>
-    <local:File  IconImageSource="text.png"></local:File>
-    <local:Money  IconImageSource="add.png"></local:Money>
+    <local:Home  IconImageSource="home.png"></local:Home>
+    <local:Menu  IconImageSource="windows.png"></local:Menu>
+    <local:File  IconImageSource="file.png"></local:File>
+    <local:Money  IconImageSource="wallet.png"></local:Money>
     <local:Settings IconImageSource="settings.png"></local:Settings>
 </TabbedPage>

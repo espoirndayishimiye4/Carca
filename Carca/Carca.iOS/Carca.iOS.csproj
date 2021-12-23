@@ -139,42 +139,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\list.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\listColor.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\menu.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\overlay.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\place.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\pressure.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\settings.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\weather.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\wind.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\add.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\bg.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\cloudiness.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\dashboard.png" />
   </ItemGroup>
   <ItemGroup>
@@ -184,21 +148,24 @@
     <BundleResource Include="Resources\Default%402x.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Default-568h%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\Default-Portrait.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-Portrait%402x.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\grid.png" />
+    <BundleResource Include="Resources\file.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\gridColor.png" />
+    <BundleResource Include="Resources\settings.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\humidity.png" />
+    <BundleResource Include="Resources\wallet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\home.png" />
   </ItemGroup>
 </Project>
