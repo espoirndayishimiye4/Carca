@@ -2,11 +2,159 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carca.Settings">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome Settings!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <StackLayout BackgroundColor="WhiteSmoke">
+            <Label Text="Settings"
+                   TextColor="#1c0c65"
+                   Margin="20,10,0,0"
+                   FontSize="20"
+                   FontAttributes="Bold"></Label>
+        <ListView ItemsSource="{Binding ListDetails}" BackgroundColor="WhiteSmoke" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="15" Margin="4">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="110"></RowDefinition>
+                                <RowDefinition Height="110"></RowDefinition>
+                                <RowDefinition Height="110"></RowDefinition>
+                                <RowDefinition Height="110"></RowDefinition>
+                                <RowDefinition Height="110"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".5*"></ColumnDefinition>
+                                <ColumnDefinition Width=".5*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Frame IsClippedToBounds="True" Grid.Row="0" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
+                                <StackLayout>
+                                    <Label  Text="&#xf155;" 
+                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontSize="30" 
+                                            TextColor="#1c0c65"
+                                            HorizontalOptions="Center"
+                                            Margin="0,35,0,0"
+                                            />
+                                    <Label Text="Payment Methods" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold" ></Label>
+                                </StackLayout>
+                            </Frame>
+                            <Frame IsClippedToBounds="True" Grid.Row="0" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
+                                <StackLayout>
+                                    <Label  Text="&#xf007;" 
+                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontSize="30" 
+                                            TextColor="#1c0c65"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Margin="0,35,0,0"
+                                            />
+                                    <Label Text="Profile" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
+                                </StackLayout>
+                            </Frame>
+                            <Frame IsClippedToBounds="True" Grid.Row="1" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
+                                <StackLayout>
+                                    <Label  Text="&#xf0f3;" 
+                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontSize="30" 
+                                            TextColor="#1c0c65"
+                                            HorizontalOptions="Center"
+                                            Margin="0,35,0,0"
+                                            />
+                                    <Label Text="Notification" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
+                                </StackLayout>
+                            </Frame>
+                            <Frame IsClippedToBounds="True" Grid.Row="1" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
+                                <StackLayout>
+                                    <Label  Text="&#xf023;" 
+                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontSize="30" 
+                                            TextColor="#1c0c65"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Margin="0,35,0,0"
+                                            />
+                                    <Label Text="Password" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
+                                </StackLayout>
+                            </Frame>
+                            <Frame IsClippedToBounds="True" Grid.Row="2" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
+                                <StackLayout>
+                                    <Label  Text="&#xf128;" 
+                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontSize="30" 
+                                            TextColor="#1c0c65"
+                                            HorizontalOptions="Center"
+                                            Margin="0,35,0,0"
+                                            />
+                                    <Label Text="FAQs" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
+                                </StackLayout>
+                            </Frame>
+                            <Frame IsClippedToBounds="True" Grid.Row="2" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
+                                <StackLayout>
+                                    <Label  Text="&#xf27a;" 
+                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontSize="30" 
+                                            TextColor="#1c0c65"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Margin="0,35,0,0"
+                                            />
+                                    <Label Text="Contact Us" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
+                                </StackLayout>
+                            </Frame>
+                            <Frame IsClippedToBounds="True" Grid.Row="3" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
+                                <StackLayout>
+                                    <Label  Text="&#xf07c;" 
+                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontSize="30" 
+                                            TextColor="#1c0c65"
+                                            HorizontalOptions="Center"
+                                            Margin="0,35,0,0"
+                                            />
+                                    <Label Text="Term of User" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
+                                </StackLayout>
+                            </Frame>
+                            <Frame IsClippedToBounds="True" Grid.Row="3" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
+                                <StackLayout>
+                                    <Label  Text="&#xf07c;" 
+                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontSize="30" 
+                                            TextColor="#1c0c65"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Margin="0,35,0,0"
+                                            />
+                                    <Label Text="Privacy Statement" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
+                                </StackLayout>
+                            </Frame>
+                            <Frame IsClippedToBounds="True" Grid.Row="4" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
+                                <StackLayout>
+                                    <Label  Text="&#xf4c4;" 
+                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontSize="30" 
+                                            TextColor="#1c0c65"
+                                            HorizontalOptions="Center"
+                                            Margin="0,35,0,0"
+                                            />
+                                    <Label Text="Help" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
+                                </StackLayout>
+                            </Frame>
+                            <Frame IsClippedToBounds="True" Grid.Row="4" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
+                                <StackLayout>
+                                    <Label  Text="&#xf2f5;" 
+                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontSize="30" 
+                                            TextColor="#1c0c65"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"
+                                            Margin="0,35,0,0"
+                                            />
+                                    <Label Text="Logout" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
+                                </StackLayout>
+                            </Frame>
+
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
         </StackLayout>
-    </ContentPage.Content>
+
 </ContentPage>
