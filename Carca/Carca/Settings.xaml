@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carca.Settings">
     <StackLayout BackgroundColor="WhiteSmoke">
-            <Label Text="Settings"
+        <Label Text="Settings"
                    TextColor="#1c0c65"
                    Margin="20,10,0,0"
                    FontSize="20"
@@ -24,7 +24,7 @@
                                 <ColumnDefinition Width=".5*"></ColumnDefinition>
                                 <ColumnDefinition Width=".5*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <Frame IsClippedToBounds="True" Grid.Row="0" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
+                            <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="0" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
                                 <StackLayout>
                                     <Label  Text="&#xf155;" 
                                             FontFamily="{StaticResource FontAwesomeSolid}" 
@@ -36,10 +36,10 @@
                                     <Label Text="Payment Methods" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold" ></Label>
                                 </StackLayout>
                             </Frame>
-                            <Frame IsClippedToBounds="True" Grid.Row="0" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
+                            <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="0" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
                                 <StackLayout>
                                     <Label  Text="&#xf007;" 
-                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontFamily="{StaticResource FontAwesomeRegular}" 
                                             FontSize="30" 
                                             TextColor="#1c0c65"
                                             HorizontalOptions="Center"
@@ -49,10 +49,10 @@
                                     <Label Text="Profile" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
                                 </StackLayout>
                             </Frame>
-                            <Frame IsClippedToBounds="True" Grid.Row="1" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
+                            <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="1" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
                                 <StackLayout>
                                     <Label  Text="&#xf0f3;" 
-                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontFamily="{StaticResource FontAwesomeRegular}" 
                                             FontSize="30" 
                                             TextColor="#1c0c65"
                                             HorizontalOptions="Center"
@@ -61,7 +61,7 @@
                                     <Label Text="Notification" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
                                 </StackLayout>
                             </Frame>
-                            <Frame IsClippedToBounds="True" Grid.Row="1" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
+                            <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="1" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
                                 <StackLayout>
                                     <Label  Text="&#xf023;" 
                                             FontFamily="{StaticResource FontAwesomeSolid}" 
@@ -74,7 +74,7 @@
                                     <Label Text="Password" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
                                 </StackLayout>
                             </Frame>
-                            <Frame IsClippedToBounds="True" Grid.Row="2" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
+                            <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="2" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
                                 <StackLayout>
                                     <Label  Text="&#xf128;" 
                                             FontFamily="{StaticResource FontAwesomeSolid}" 
@@ -86,10 +86,10 @@
                                     <Label Text="FAQs" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
                                 </StackLayout>
                             </Frame>
-                            <Frame IsClippedToBounds="True" Grid.Row="2" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
+                            <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="2" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
                                 <StackLayout>
                                     <Label  Text="&#xf27a;" 
-                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontFamily="{StaticResource FontAwesomeRegular}" 
                                             FontSize="30" 
                                             TextColor="#1c0c65"
                                             HorizontalOptions="Center"
@@ -99,10 +99,10 @@
                                     <Label Text="Contact Us" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
                                 </StackLayout>
                             </Frame>
-                            <Frame IsClippedToBounds="True" Grid.Row="3" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
+                            <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="3" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
                                 <StackLayout>
                                     <Label  Text="&#xf07c;" 
-                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontFamily="{StaticResource FontAwesomeRegular}" 
                                             FontSize="30" 
                                             TextColor="#1c0c65"
                                             HorizontalOptions="Center"
@@ -111,10 +111,10 @@
                                     <Label Text="Term of User" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
                                 </StackLayout>
                             </Frame>
-                            <Frame IsClippedToBounds="True" Grid.Row="3" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
+                            <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="3" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
                                 <StackLayout>
                                     <Label  Text="&#xf07c;" 
-                                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                                            FontFamily="{StaticResource FontAwesomeRegular}" 
                                             FontSize="30" 
                                             TextColor="#1c0c65"
                                             HorizontalOptions="Center"
@@ -124,7 +124,7 @@
                                     <Label Text="Privacy Statement" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
                                 </StackLayout>
                             </Frame>
-                            <Frame IsClippedToBounds="True" Grid.Row="4" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
+                            <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="4" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
                                 <StackLayout>
                                     <Label  Text="&#xf4c4;" 
                                             FontFamily="{StaticResource FontAwesomeSolid}" 
@@ -136,7 +136,7 @@
                                     <Label Text="Help" HorizontalOptions="Center" TextColor="#1c0c65" FontAttributes="Bold"></Label>
                                 </StackLayout>
                             </Frame>
-                            <Frame IsClippedToBounds="True" Grid.Row="4" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
+                            <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="4" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
                                 <StackLayout>
                                     <Label  Text="&#xf2f5;" 
                                             FontFamily="{StaticResource FontAwesomeSolid}" 
@@ -155,6 +155,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        </StackLayout>
+    </StackLayout>
 
 </ContentPage>
