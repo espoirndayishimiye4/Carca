@@ -3,10 +3,55 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carca.Menu">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Menu!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="WhiteSmoke">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="250"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Frame Grid.Column="0" Grid.Row="0" BackgroundColor="#1c0c65">
+                    <StackLayout>
+                        <Label Text="123 Main Street" 
+                               TextColor="White"
+                               Margin="60,10,0,0"
+                               FontSize="18"></Label>
+                        <Label  Text="&#xf078;" 
+                            FontFamily="{StaticResource FontAwesomeSolid}" 
+                            FontSize="20" 
+                            TextColor="White"
+                            Margin="195,-30,0,0"
+                            
+                        />
+                        <Label  Text="&#xf0f3;" 
+                            FontFamily="{StaticResource FontAwesomeRegular}" 
+                            FontSize="30" 
+                            TextColor="White"
+                            Margin="0,-20,20,0"
+                            HorizontalOptions="End"
+                        />
+                        <Label Text="$150 due in" 
+                               TextColor="White"
+                               Margin="0,20,20,0"
+                               FontSize="15">
+                        </Label>
+                        <Label Text="Today" 
+                               TextColor="White"
+                               Margin="0,0,20,0"
+                               FontSize="40"
+                               FontAttributes="Bold">
+                        </Label>
+                        <Button Text="Continue"
+                            BackgroundColor="#aaaaaa"
+                            TextColor="White"
+                            CornerRadius="40"
+                            Margin="0,40,0,0"
+                            WidthRequest="50"
+                            HeightRequest="50"></Button>
+                    </StackLayout>
+                </Frame>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
