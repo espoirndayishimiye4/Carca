@@ -3,10 +3,194 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Carca.Money">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Money!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="WhiteSmoke">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Frame Grid.Column="0" Grid.Row="0" BackgroundColor="#1c0c65" CornerRadius="20">
+                    <StackLayout>
+                      
+                     
+                        <Label Text="You Pay" 
+                               TextColor="White"
+                               Margin="0,0,20,0"
+                               FontSize="15">
+                        </Label>
+                        <Label Text="$100" 
+                               TextColor="White"
+                               Margin="0,0,20,0"
+                               FontSize="40"
+                               FontAttributes="Bold">
+                        </Label>
+                        <Label Text="On The" 
+                               TextColor="White"
+                               Margin="0,-90,40,0"
+                               FontSize="15"
+                               HorizontalOptions="End">
+                        </Label>
+                        <Label Text="2end" 
+                               TextColor="White"
+                               Margin="0,0,0,0"
+                               FontSize="40"
+                               FontAttributes="Bold"
+                               HorizontalOptions="End">
+                        </Label>
+                       
+                    </StackLayout>
+                </Frame>
+            </Grid>
+            <Grid Padding="20,0,0,0" Margin="0,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"></RowDefinition>
+                    <RowDefinition Height="70"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".5*"></ColumnDefinition>
+                    <ColumnDefinition Width=".5*"></ColumnDefinition>
+                    
+                </Grid.ColumnDefinitions>
+
+                <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="0" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
+                    <StackLayout>
+                        <Label  Text="&#xf111;" 
+                                FontFamily="{StaticResource FontAwesomeRegular}" 
+                                FontSize="30" 
+                                TextColor="#1c0c65"
+                                Margin="0,20,0,0"
+                                            />
+                        <Label Text="One Pay" HorizontalOptions="Center" FontSize="16" TextColor="Black"  Margin="0,-40,0,0" FontAttributes="Bold"></Label>
+                        <Label Text="1" FontSize="15"  TextColor="Gray"  Margin="10,-15,0,0"></Label>
+                        <Label Text="Free" HorizontalOptions="Center" TextColor="Gray"  Margin="-30,-15,0,0"></Label>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="0" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
+                    <StackLayout>
+                        <Label  Text="&#xf111;" 
+                                FontFamily="{StaticResource FontAwesomeRegular}" 
+                                FontSize="30" 
+                                TextColor="#1c0c65"
+                                Margin="0,20,0,0"
+                                            />
+                        <Label Text="One Pay" HorizontalOptions="Center" FontSize="16" TextColor="Black"  Margin="0,-40,0,0" FontAttributes="Bold"></Label>
+                        <Label Text="1" FontSize="15"  TextColor="Gray"  Margin="10,-15,0,0"></Label>
+                        <Label Text="$15/ Month" HorizontalOptions="Center" TextColor="Gray"  Margin="10,-15,0,0"></Label>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="1" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
+                    <StackLayout>
+                        <Label  Text="&#xf111;" 
+                                FontFamily="{StaticResource FontAwesomeRegular}" 
+                                FontSize="30" 
+                                TextColor="#1c0c65"
+                                Margin="0,20,0,0"
+                                            />
+                        <Label Text="Two Pay" HorizontalOptions="Center" FontSize="16" TextColor="Black"  Margin="0,-40,0,0" FontAttributes="Bold"></Label>
+                        <Label Text="2" FontSize="15"  TextColor="Gray"  Margin="10,-15,0,0"></Label>
+                        <Label Text="$7.5/ Month" HorizontalOptions="Center" TextColor="Gray"  Margin="10,-15,0,0"></Label>
+                    </StackLayout>
+                </Frame>
+                <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="1" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
+                    <StackLayout>
+                        <Label  Text="&#xf111;" 
+                                FontFamily="{StaticResource FontAwesomeRegular}" 
+                                FontSize="30" 
+                                TextColor="#1c0c65"
+                                Margin="0,20,0,0"
+                                            />
+                        <Label Text="Four Pay" HorizontalOptions="Center" FontSize="16" TextColor="Black"  Margin="0,-40,0,0" FontAttributes="Bold"></Label>
+                        <Label Text="4" FontSize="15"  TextColor="Gray"  Margin="10,-15,0,0"></Label>
+                        <Label Text="$15/ Month" HorizontalOptions="Center" TextColor="Gray"  Margin="10,-15,0,0"></Label>
+                    </StackLayout>
+                </Frame>
+
+            </Grid>
+            <Label Text="Date" Margin="30,0,0,0" TextColor="#1c0c65" FontAttributes="Bold" FontSize="18"></Label>
+            <Grid Padding="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"></RowDefinition>
+                </Grid.RowDefinitions>
+                
+                <Frame CornerRadius="20">
+                    <StackLayout>
+                        <Label  Text="&#xf133;" 
+                                    FontFamily="{StaticResource FontAwesomeRegular}" 
+                                    FontSize="15" 
+                                    TextColor="#1c0c65"
+                                    Margin="0,0,0,0"
+                                                />
+                        <Label Text="2end of every Month"  TextColor="Black" FontSize="15" Margin="60,-25,0,0"></Label>
+                        <Label  Text="&#xf054;" 
+                                    FontFamily="{StaticResource FontAwesomeSolid}" 
+                                    FontSize="30" 
+                                    TextColor="#1c0c65"
+                                    Margin="0,-30,0,0"
+                                HorizontalOptions="End"
+                                                />
+                    </StackLayout>
+                </Frame>
+            </Grid>
+           
+            <Label Text="Method" Margin="30,0,0,0" TextColor="#1c0c65" FontAttributes="Bold" FontSize="18"></Label>
+            <Grid Padding="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".5*"></ColumnDefinition>
+                    <ColumnDefinition Width=".5*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Frame CornerRadius="20">
+                    <StackLayout>
+                        <Label  Text="&#xf015;" 
+                                    FontFamily="{StaticResource FontAwesomeSolid}" 
+                                    FontSize="15" 
+                                    TextColor="#1c0c65"
+                                    Margin="0,0,0,0"
+                                                />
+                        <Label Text="Divyah"  TextColor="Black" FontSize="15" Margin="40,-25,0,0"></Label>
+                       
+                    </StackLayout>
+                </Frame>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Column="0" Grid.Row="0">
+                    <Button Text="Save" 
+                                BackgroundColor="#1c0c65" 
+                                TextColor="White" 
+                                WidthRequest="110" 
+                                HeightRequest="45" 
+                                BorderWidth="1" 
+                                Margin="0,0,0,0"
+                                BorderColor="White"
+                                CornerRadius="25"></Button>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="1">
+                    <Button Text="submit" 
+                                BackgroundColor="#1c0c65" 
+                                TextColor="White" 
+                                WidthRequest="110" 
+                                HeightRequest="45" 
+                                BorderWidth="1" 
+                                Margin="0,0,0,0"
+                                BorderColor="White"
+                                CornerRadius="25"></Button>
+                </StackLayout>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
