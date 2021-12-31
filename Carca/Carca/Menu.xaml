@@ -114,9 +114,38 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-            
+
                 <Frame CornerRadius="20">
-                    
+                    <StackLayout>
+                        <Label  Text="&#xf111;" 
+                                FontFamily="{StaticResource FontAwesomeRegular}" 
+                                FontSize="30" 
+                                TextColor="#1c0c65"
+                                Margin="0,0,0,0"
+                                            />
+                        <Label  Text="&#xf784;" 
+                                FontFamily="{StaticResource FontAwesomeSolid}" 
+                                FontSize="30" 
+                                TextColor="#1c0c65"
+                                Margin="0,0,0,0"
+                                            />
+                        <Label  Text="&#xe065;" 
+                                FontFamily="{StaticResource FontAwesomeSolid}" 
+                                FontSize="30" 
+                                TextColor="#1c0c65"
+                                Margin="0,0,0,0"
+                                            />
+                        <ListView Margin="50,-125,0,0">
+                            <ListView.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Four pay</x:String>
+                                    <x:String>Thursday</x:String>
+                                    <x:String>Dahvah</x:String>
+
+                                </x:Array>
+                            </ListView.ItemsSource>
+                        </ListView>
+                    </StackLayout>
                 </Frame>
             </Grid>
           

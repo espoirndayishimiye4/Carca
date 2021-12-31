@@ -4,7 +4,6 @@
              x:Class="Carca.App">
     <Application.Resources>
         <ResourceDictionary>
-
             <OnPlatform x:TypeArguments="x:String" x:Key="FontAwesomeRegular">
                 <On Platform="Android" Value="FontAwesome5Regular400.otf#Regular" />
                 <On Platform="iOS" Value="FontAwesome5Regular400" />
