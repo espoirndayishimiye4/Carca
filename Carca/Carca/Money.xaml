@@ -54,7 +54,7 @@
                     
                 </Grid.ColumnDefinitions>
 
-                <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="0" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
+                <Frame BorderColor="#1c0c65" CornerRadius="15" IsClippedToBounds="True" Grid.Row="0" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
                     <StackLayout>
                         <Label  Text="&#xf111;" 
                                 FontFamily="{StaticResource FontAwesomeRegular}" 
