@@ -54,57 +54,38 @@
                     </StackLayout>
                 </Frame>
             </Grid>
-            <Grid Padding="20,0,0,0" Margin="0,-40,0,0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="70"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width=".4*"></ColumnDefinition>
-                    <ColumnDefinition Width=".4*"></ColumnDefinition>
-                    <ColumnDefinition Width=".4*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
 
-                <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="0" Grid.Column="0" HasShadow="True" BackgroundColor="White" Padding="0">
-                    <StackLayout>
-                        <Label  Text="&#xf111;" 
-                                FontFamily="{StaticResource FontAwesomeRegular}" 
-                                FontSize="30" 
-                                TextColor="#1c0c65"
-                                Margin="0,20,0,0"
-                                            />
-                        <Label Text="$115" HorizontalOptions="Center" TextColor="Gray"  Margin="0,-40,0,0"></Label>
-                        <Label Text="1" FontSize="15"  TextColor="Gray"  Margin="10,-15,0,0"></Label>
-                        <Label Text="Feb 16" HorizontalOptions="Center" TextColor="Black"  Margin="0,-15,0,0"></Label>
-                    </StackLayout>
-                </Frame>
-                <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="0" Grid.Column="1" HasShadow="True" BackgroundColor="White" Padding="0">
-                    <StackLayout>
-                        <Label  Text="&#xf111;" 
-                                FontFamily="{StaticResource FontAwesomeRegular}" 
-                                FontSize="30" 
-                                TextColor="#1c0c65"
-                                Margin="0,20,0,0"
-                                            />
-                        <Label Text="$29.50" HorizontalOptions="Center" TextColor="Gray"  Margin="0,-40,0,0"></Label>
-                        <Label Text="4" FontSize="15"  TextColor="Gray"  Margin="10,-15,0,0"></Label>
-                        <Label Text="Mar 4" HorizontalOptions="Center" TextColor="Black"  Margin="0,-15,0,0"></Label>
-                    </StackLayout>
-                </Frame>
-                <Frame CornerRadius="15" IsClippedToBounds="True" Grid.Row="0" Grid.Column="2" HasShadow="True" BackgroundColor="White" Padding="0">
-                    <StackLayout>
-                        <Label  Text="&#xf111;" 
-                                FontFamily="{StaticResource FontAwesomeRegular}" 
-                                FontSize="30" 
-                                TextColor="#1c0c65"
-                                Margin="0,20,0,0"
-                                            />
-                        <Label Text="$115" HorizontalOptions="Center" TextColor="Gray"  Margin="0,-40,0,0"></Label>
-                        <Label Text="4" FontSize="15"  TextColor="Gray"  Margin="10,-15,0,0"></Label>
-                        <Label Text="Feb 16" HorizontalOptions="Center" TextColor="Black"  Margin="0,-15,0,0"></Label>
-                    </StackLayout>
-                </Frame>
-                
-            </Grid>
+            <ListView ItemsSource="{Binding ListDetails}" 
+                      Rotation="270" 
+                      BackgroundColor="Transparent" 
+                      HasUnevenRows="True" 
+                      Margin="0,-220,0,0" 
+                      VerticalOptions="FillAndExpand"
+                      HeightRequest="240"
+                      WidthRequest="140">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="150"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="140"></ColumnDefinition>
+                                    
+                                </Grid.ColumnDefinitions>
+                                <Frame IsClippedToBounds="True"  HasShadow="True" Padding="0" BackgroundColor="White" CornerRadius="20">
+                                    <StackLayout Rotation="90">
+                                        <Image Source="{Binding Image}" Margin="0,30,0,0" HeightRequest="40"></Image>
+                                        <Label Text="{Binding Name}" HorizontalOptions="Center"></Label>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
             <Label Text="Your Plan" Margin="30,40,0,0" TextColor="#1c0c65" FontAttributes="Bold" FontSize="18"></Label>
             <Label Text="EDIT" Margin="0,-20,30,0" TextColor="#1c0c65" FontSize="14" HorizontalOptions="End"></Label>
             <Grid Padding="20">
