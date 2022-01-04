@@ -55,7 +55,7 @@
                 </Frame>
             </Grid>
 
-            <ListView ItemsSource="{Binding ListDetails}" 
+            <ListView ItemsSource="{Binding Items}" 
                       Rotation="270" 
                       BackgroundColor="Transparent" 
                       HasUnevenRows="True" 

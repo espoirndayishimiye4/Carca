@@ -4,11 +4,9 @@ using System.Text;
 
 namespace Carca.Models
 {
-    internal class Item
+    internal class Pay
     {
-        public int Id { get; set; }
         public string Name { get; set; }
-
         public string Image { get; set; }
     }
 }
