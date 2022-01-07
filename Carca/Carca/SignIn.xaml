@@ -45,8 +45,9 @@
             <local:MyEntry FontSize="15" ></local:MyEntry>
             <Label Text="I have read and agree to the"
                    Margin="20,20,0,0"></Label>
-            
-            <Switch Margin="0,0,0,0"></Switch>
+
+            <Switch HorizontalOptions="End" 
+                    x:Name="switch"></Switch>
 
             <Label Text="Terms And Conditions"
                    Margin="20,-35,0,0"
@@ -61,7 +62,16 @@
                     BackgroundColor="#aaaaaa"
                     TextColor="White"
                     CornerRadius="40"
-                     Margin="0,40,0,0"></Button>
+                     Margin="0,40,0,0"
+                    IsEnabled="False">
+                <Button.Triggers>
+                    <DataTrigger TargetType="Button"
+                                 Binding="{Binding Source={x:Reference switch},
+                                 Path=IsToggled}" Value="True">
+                        <Setter Value="True" Property="IsEnabled"></Setter>
+                    </DataTrigger>
+                </Button.Triggers>
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
